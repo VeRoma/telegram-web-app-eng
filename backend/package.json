@@ -1,0 +1,21 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"nodemon": "nodemon index.js",
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"buffer-alloc": "^1.2.0",
+		"dotenv": "^16.4.5",
+		"telegraf": "^4.16.3"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.4"
+	}
+}
