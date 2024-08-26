@@ -22,7 +22,10 @@ bot.start((ctx) => {
 
 	// Создаем инлайн-кнопку
 	const inlineKeyboard = Markup.inlineKeyboard([
-		Markup.button.webApp("Open web app", "https://www.google.com/"),
+		Markup.button.webApp(
+			"Open web app",
+			"https://main--telegram-web-app-eng-front.netlify.app/"
+		),
 	]);
 
 	// Отправляем сообщение с клавиатурой
