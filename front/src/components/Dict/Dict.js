@@ -4,7 +4,7 @@ const Dict = () => {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		fetch("./engF2000.json")
+		fetch("/engF2000.json")
 			.then((response) => response.json())
 			.then((jsonData) => setData(jsonData))
 			.catch((error) =>
