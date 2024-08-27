@@ -11,7 +11,7 @@ function App() {
 		tg.ready();
 	}, [tg]);
 
-	// tg.expand();
+	tg.expand();
 
 	return (
 		<div className="App">
