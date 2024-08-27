@@ -11,12 +11,14 @@ function App() {
 		tg.ready();
 	}, [tg]);
 
-	tg.Expand();
+	tg.expand();
 
 	return (
 		<div className="App">
 			<Header />
-			<button onClick={onToggleButton}>default button - show toggle from App.js</button>
+			<button onClick={onToggleButton}>
+				default button - show toggle from App.js
+			</button>
 			<Form />
 		</div>
 	);
