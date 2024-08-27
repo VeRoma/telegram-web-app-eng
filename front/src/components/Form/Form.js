@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const Form = (props) => {
 	return (
@@ -6,11 +7,10 @@ const Form = (props) => {
 		<div className="buttons-block">
 			<input id className="display" type="text" disabled value="test test test" />
 
-			<button id="option_1" className="neon-button">option_1</button>
-
-			<button id="option_2" className="neon-button">option_2</button>
-
-			<button id="option_3" className="neon-button">option_3</button>
+			<Button id="option_1" className="neon-button">Option 1</Button>
+			<Button id="option_2" className="neon-button">Option 2</Button>
+			<Button id="option_2" className="neon-button">Option 2</Button>
+			
 		</div>
 	);
 };
