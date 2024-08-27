@@ -2,8 +2,9 @@ import React from "react";
 
 const Form = (props) => {
 	return (
-		<div>
-			<input id="display" type="text" disabled />
+		// className={"header"}
+		<div className={"buttons-block"}>
+			<input className={"display"} type="text" disabled />
 
 			<button id="option_1" class="neon-button"></button>
 
