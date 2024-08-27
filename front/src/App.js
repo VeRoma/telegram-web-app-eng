@@ -14,11 +14,8 @@ function App() {
 	tg.expand();
 
 	return (
-		<div className="App">
-			<Header />
-			<button onClick={onToggleButton}>
-				default button - show toggle from App.js
-			</button>
+		<div className="App">		
+			
 			<Form />
 		</div>
 	);
