@@ -1,3 +1,4 @@
+import "./Form.css";
 import React from "react";
 import Button from "../Button/Button";
 import Display from "../Display/Display";
