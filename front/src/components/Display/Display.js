@@ -1,4 +1,5 @@
-import Dict from "../Dict/Dict";
+import { Dict } from "../Dict/Dict";
+
 import "./Display.css";
 import React from "react";
 
