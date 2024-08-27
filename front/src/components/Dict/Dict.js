@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-
-const Dict = () => {
+import { useEffect, useState } from "react";
+let dataDict=0;
+export function Dict() {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
@@ -12,16 +12,7 @@ const Dict = () => {
 			);
 	}, []);
 
-	return (
-		<div>
-			<h1>Данные из JSON файла</h1>
-			{data ? (
-				<pre>{JSON.stringify(data, null, 2)}</pre>
-			) : (
-				<p>Ззззз...</p>
-			)}
-		</div>
-	);
-};
+	return data ? (dataDict = data) : (dataDict = 0)
 
-export default Dict;
+}
+

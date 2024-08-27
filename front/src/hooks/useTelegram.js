@@ -13,7 +13,7 @@ export function useTelegram() {
 		if (tg.MainButton.isVisible) {
 			tg.MainButton.hide();
 		} else {
-			tg.MainButton.background = "#ffcc00";
+			// tg.MainButton.background = "#ffcc00";
 			tg.MainButton.show();
 		}
 	};

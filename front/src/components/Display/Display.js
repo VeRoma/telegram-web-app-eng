@@ -1,15 +1,10 @@
 import Dict from "../Dict/Dict";
-import "./Display.css"
-import React from 'react';
+import "./Display.css";
+import React from "react";
 
 const Display = (props) => {
-	return (
-		<div className='display'>
-			<Dict/>
-			Question
-		</div>
-
-	);
-}
+	const { data } = Dict();
+	return <div className="display">data:{data}</div>;
+};
 
 export default Display;
