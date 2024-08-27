@@ -9,6 +9,7 @@
     font-weight: 500;
     color: var(--tg-theme-button-text-color);
     background: var(--tg-theme-button-color);
+    background: var(#3388ee);
     width: 100%; /* Сделаем кнопку на всю ширину контейнера */
     max-width: 300px; /* Максимальная ширина кнопки */
     box-sizing: border-box; /* Убедимся, что padding и ширина не конфликтуют */
