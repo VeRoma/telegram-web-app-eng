@@ -3,18 +3,13 @@ import React, { useEffect, useState } from "react";
 const Dict = () => {
 	const [data, setData] = useState(null);
 
-	const fetchData = async () => {
-		try {
-			const response = await fetch("./engF2000.json");
-			const jsonData = await response.json();
-			setData(jsonData);
-		} catch (error) {
-			console.error("Ошибка при загрузке JSON:", error);
-		}
-	};
-
 	useEffect(() => {
-		fetchData();
+		fetch("./engF2000.json")
+			.then((response) => response.json())
+			.then((jsonData) => setData(jsonData))
+			.catch((error) =>
+				console.error("Ошибка при загрузке JSON:", error)
+			);
 	}, []);
 
 	return (
@@ -23,7 +18,7 @@ const Dict = () => {
 			{data ? (
 				<pre>{JSON.stringify(data, null, 2)}</pre>
 			) : (
-				<p>Загрузка...</p>
+				<p>Ззззз...</p>
 			)}
 		</div>
 	);
