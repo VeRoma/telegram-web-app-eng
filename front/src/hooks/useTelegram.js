@@ -5,6 +5,10 @@ export function useTelegram() {
 		tg.close();
 	};
 
+	const onAlert = () => {
+		tg.showAlert("Hey there!");
+	};
+
 	const onToggleButton = () => {
 		if (tg.MainButton.isVisible) {
 			tg.MainButton.hide();
@@ -15,6 +19,7 @@ export function useTelegram() {
 
 	return {
 		onClose,
+		onAlert,
 		onToggleButton,
 		tg,
 		user: tg.initDataUnsafe?.user,
