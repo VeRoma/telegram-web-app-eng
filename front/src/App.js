@@ -11,6 +11,8 @@ function App() {
 		tg.ready();
 	}, [tg]);
 
+	tg.Expand();
+
 	return (
 		<div className="App">
 			<Header />
