@@ -43,10 +43,10 @@ bot.start((ctx) => {
 // Обработчик для нажатий на первую кнопку
 bot.hears("PUSH ME", (ctx) => {
 	ctx.reply("Вы нажали");			//		*/
-});
 
-bot.action("button_click", (ctx) => {
-	ctx.reply("Вы нажали кнопку!");
+	bot.action("button_click", (ctx) => {
+		ctx.reply("Вы нажали кнопку!");
+	});
 });
 
 // bot.help((ctx) => ctx.reply('Send me a sticker'))
