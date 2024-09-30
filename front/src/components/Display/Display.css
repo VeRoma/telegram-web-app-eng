@@ -13,4 +13,5 @@
 	/* max-width: 300px; Максимальная ширина кнопки */
 	box-sizing: border-box; /* Убедимся, что padding и ширина не конфликтуют */
 	text-align: center;
+	background-color: #666;
 }

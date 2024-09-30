@@ -31,10 +31,6 @@ bot.start((ctx) => {
 	// Отправляем сообщение с клавиатурой
 	ctx.reply(welcomeMessage, inlineKeyboard);
 
-	bot.action("button_click", (ctx) => {
-		ctx.reply("Вы нажали кнопку!");
-	});
-
 	/*	// Создаем клавиатуру с ответами
 	const replyKeyboard = Markup.keyboard([["PUSH ME"]])
 		.resize()
@@ -47,6 +43,10 @@ bot.start((ctx) => {
 // Обработчик для нажатий на первую кнопку
 bot.hears("PUSH ME", (ctx) => {
 	ctx.reply("Вы нажали");			//		*/
+});
+
+bot.action("button_click", (ctx) => {
+	ctx.reply("Вы нажали кнопку!");
 });
 
 // bot.help((ctx) => ctx.reply('Send me a sticker'))
